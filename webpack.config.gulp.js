@@ -123,7 +123,7 @@ function webpackConfig(args) {
             alias: {
                 'jquery': ROOT_PATH + '/plugins/jquery/jquery-2.1.4.min.js',
                 '{plugins}': ROOT_PATH + '/plugins',
-
+                '{public}': ROOT_PATH + '/public',
                 '{website}': ROOT_PATH + '/website',
             },
             // modulesDirectories: [ 'lib', 'modules', 'node_modules'],

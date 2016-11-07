@@ -27,6 +27,7 @@
         <script src="/plugins/pace/pace.min.js"></script>
          <!--<![endif]-->
         <script src="http://127.0.0.1:4001/common.js"></script>
+
         <link rel="stylesheet" type="text/css" href="http://127.0.0.1:4001/website/js/index/index.css">
 
 
@@ -49,29 +50,22 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
+                        <div class="form-group group-search"><i class="iconfont icon-search"></i>
                             <input type="text" class="" placeholder="请输入关键词">
+                            <span class="btn-search">搜  索</span>
                         </div>
-                        <button type="submit" class="btn btn-default">搜索</button>
+                        
                     </form>
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-left pull-right" id="header-nav">
                         <li class="active"><a href="/">首  页</a><span class="bkg"></span></li>
-                        <li><a href="#about">关于海蓝</a><span class="bkg"></span></li>
+                        <li class="dropdown" item-name="about">
+                            <a href="#about">关于海蓝</a><span class="bkg"></span>
+                            
+                        </li>
                         <li><a href="#news">新闻中心</a><span class="bkg"></span></li>
-                        <li><a href="#estate">地产中心</a><span class="bkg"></span></li>
+                        <li class="dropdown" item-name="estate"><a href="#estate">地产中心</a><span class="bkg"></span></li>
                         <li><a href="#join">加入海蓝</a><span class="bkg"></span></li>
                         <li><a href="#contact">联系海蓝</a><span class="bkg"></span></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                            <ul class="dropdown-menu" role="menu">
-
-
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
                     </ul>
 
 
@@ -80,6 +74,30 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
+        <section>
+            <div class="container-fluid" id="subNav">
+                
+                <div class="g-wrap">
+                    <div class="item about">
+                        <a href="about.aspx?type=3">海蓝简介</a>
+                        <a href="about.aspx?type=5">企业文化</a>
+                        <a href="about.aspx?type=6">管理之道</a>
+                    </div>
+                    <div class="item estate">
+                        <a href="about.aspx?type=3">地产服务</a>
+                        <a href="about.aspx?type=5">职业招商</a>
+                        <a href="about.aspx?type=6">物业服务</a>
+                        <a href="about.aspx?type=6">海蓝采智</a>
+                    </div>
+                    
+                     
+                    
+                    
+                    
+                </div>
+               
+            </div>
+        </section>
 
 
 

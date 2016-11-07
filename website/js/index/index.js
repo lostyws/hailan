@@ -1,2 +1,3 @@
- require('{website}/css/index/index.css');
- alert(1111);
+require('{website}/css/index/index.css');
+require('{public}/js/base.js')
+ 
