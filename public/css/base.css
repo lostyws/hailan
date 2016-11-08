@@ -3,10 +3,12 @@
 html {
     height: 100%;
 }
-
 body {
+    color: #666;
     height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei";
 }
+
 @font-face {font-family: "iconfont";
   src: url('/public/font/iconfont.eot?t=1478530710334'); /* IE9*/
   src: url('/public/font/iconfont.eot?t=1478530710334#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -24,12 +26,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrownext:before { content: "\e606"; }
+.icon-arrowprev:before { content: "\e609"; }
+
+
 .icon-search:before { content: "\e611"; }
 
+.icon-fenxiang:before { content: "\e70f"; }
 
+.icon-xiangyoujiantou:before { content: "\e65f"; }
 
+.icon-geren:before { content: "\e657"; }
+
+.icon-dian-copy:before { content: "\e601"; }
+
+.icon-arrownext1:before { content: "\e606"; }
+
+h3 {
+    font-size: 22px;
+}
+a:hover {
+    text-decoration:none;
+}
+.padding-right-15 {
+    padding-right: 15px !important;
+}
+.padding-top-30 {
+    padding-top: 30px !important;
+}
+.padding-bottom-0 {
+    padding-bottom: 0px !important;
+}
+.padding-bottom-30 {
+    padding-bottom: 30px !important;
+}
+.text-right {
+    text-align: right !important;
+}
 .navbar-hailan {
-    font-family: "微软雅黑";
     background-color: #fff;
     position: static;
     min-height: 80px;
@@ -69,7 +103,7 @@ body {
 .navbar-hailan .navbar-nav>li:hover>span,
 .navbar-hailan .navbar-nav>li.active>span{
 	top: 0px;
-    
+
 }
 .navbar-hailan .navbar-nav>li:hover>a,
 .navbar-hailan .navbar-nav>li:focus>a,
@@ -94,7 +128,7 @@ body {
     height: 25px;
     width: 210px;
     border: 1px solid #a09f9f;
-    
+
 }
 .group-search i {
     margin-left: 5px;
@@ -126,21 +160,32 @@ body {
     overflow:visible;
 }
 #subNav .g-wrap .item {
-    position:absolute; 
-    top:-100%; 
-    width:100%; 
-    height:100%; 
+    position:absolute;
+    top:-100%;
+    width:100%;
+    height:100%;
     padding-left: 25px;
-    background-color:#414141; 
-    overflow:hidden; 
-    -webkit-transition:top 300ms; 
+    background-color:#414141;
+    overflow:hidden;
+    -webkit-transition:top 300ms;
     transition:top 300ms;
 }
 #subNav .g-wrap .item a {
     color: #fff;
     padding-right: 30px;
+    font-size: 16px;
+    font-family: "微软雅黑";
 }
 #subNav .g-wrap .item.active {
     top: 0px;
 }
-    
+
+.container-footer {
+    height: 115px;
+    background-color: #414141;
+    color: #fff;
+}
+.share-warp .icon-fenxiang {
+    font-size: 34px;
+}
+

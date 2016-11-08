@@ -1,3 +1,161 @@
-html {
-	height: 100%;
+.js-banner-top.swiper-container {
+	height: 825px;
+}
+.button-next, .button-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 34px;
+    color: #fff;
+    -ms-transition:left 400ms, right 400ms;
+	transition:left 400ms, right 400ms;
+	-webkit-transition:left 400ms, right 400ms;
+	-moz-transition:left 400ms, right 400ms;
+	-o-transition:left 400ms, right 400ms;
+}
+.button-next>i, .button-prev>i {
+	font-size: 60px;
+}
+.button-next>i:hover, .button-prev>i:hover {
+	color: #ff4200;
+}
+.button-next {
+    left: -100%;
+    right: auto;
+}
+.button-prev {
+	right: -100%;
+	left: auto;
+}
+.swiper-container:hover .button-prev {
+	right: 50px;
+}
+.swiper-container:hover .button-next {
+	left: 50px;
+}
+.swiper-bottom {
+	height: 95px;
+	width: 100%;
+	background-color: #000;
+	opacity: .4;
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+
+}
+.service-list {
+    margin-top: -65px;
+    height: 65px;
+    border-bottom: 4px solid #aeaeae;
+    z-index: 2;
+    position: relative;
+}
+.service-list .service-item {
+	// margin-left: 90px;
+	cursor: pointer;
+	height: 65px;
+}
+.service-list .service-item:hover,
+.service-list .service-item.active {
+	border-bottom: 4px solid #ff4200;
+}
+.service-list .service-item:nth-child(1){
+	margin-left: 90px;
+}
+.service-list .service-item:nth-child(2){
+	margin-left: 60px;
+}
+.service-list .service-item:nth-child(3){
+	margin-left: 30px;
+}
+.service-item img {
+	width: 42px;
+	float: left;
+}
+.service-item>.title {
+	color: #fff;
+	padding-left: 50px;
+}
+.service-item>.title>h4 {
+	font-size: 22px;
+	margin: 0px;
+}
+
+.js-banner-right.swiper-container {
+	height: 395px;
+}
+.swiper-slide {
+	background-size:cover;
+}
+.swiper-pagination-right {
+	text-align: right;
+	padding-right: 15px;
+}
+.text-prev-warp {
+	width: 250px;
+	height: 125px;
+	background-color: #0064b4;
+	position: absolute;
+    top: 220px;
+    z-index: 10;
+    color: #fff;
+    padding-left: 40px;
+    -ms-transition:left 400ms, right 400ms;
+	transition:left 400ms, right 400ms;
+	-webkit-transition:left 400ms, right 400ms;
+	-moz-transition:left 400ms, right 400ms;
+	-o-transition:left 400ms, right 400ms;
+	left: -100%;
+	right: auto;
+
+}
+.text-prev-warp p {
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+.js-banner-right:hover .text-prev-warp {
+	left: 0;
+}
+.hailan-news>h4 {
+	font-size: 19px;
+	margin: 0px;
+	padding: 10px 22px;
+	background: #dcdddd;
+}
+.js-banner-left {
+	height: 180px;
+}
+.rectangle-pagination {
+	text-align: right;
+}
+.rectangle-pagination .swiper-pagination-bullet {
+	border-radius: 0px;
+	width: 40px;
+	height: 4px;
+	background: #dcdddd;
+}
+.rectangle-pagination .swiper-pagination-bullet:hover,
+.rectangle-pagination .swiper-pagination-bullet-active {
+	background: #9fa0a0;
+}
+
+.hailan-news .news-container {
+	padding: 15px 0px;
+	color: #808080;
+}
+.hailan-news .news-container ul {
+	list-style-type: none;
+    padding-left: 0px;
+}
+.hailan-news .news-container ul>li{
+	line-height: 25px;
+}
+.hailan-news .news-container h4 {
+	color: #414141;
+}
+.hailan-news .news-container p,
+.hailan-news .news-container a {
+	color: #808080;
+
 }
