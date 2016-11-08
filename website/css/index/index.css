@@ -3,7 +3,7 @@
 }
 .button-next, .button-prev {
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 10;
     cursor: pointer;
     font-size: 34px;
