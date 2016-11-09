@@ -1,8 +1,14 @@
-require('{website}/css/index/index.css');
+require('{plugins}/artDialog/6.0.2/ui-dialog.css');
 require('{plugins}/swiper/3.1.7/swiper.css');
+require('{website}/css/index/index.css');
 
 require('{public}/js/base.js');
+
+
+require('{plugins}/artDialog/6.0.2/dialog');
 var Swiper = require('{plugins}/swiper/3.1.7/swiper.js');
+var ZeroClipboard = require('{plugins}/ZeroClipboard.js');
+var sharetpl = require('{website}/tpl/share.hbs');
 
 new Swiper('.js-banner-top', {
     // pagination: '.swiper-pagination',
@@ -32,4 +38,5 @@ new Swiper('.js-banner-left', {
     // height: 395,
 
 });
+
 

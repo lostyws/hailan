@@ -1,6 +1,7 @@
 .top-bg {
 	background: transparent url('/website/images/estate/top_min.jpg') no-repeat scroll center top;
 	height: 90px;
+	margin-top: 80px;
 	background-size: cover;
 }
 .link-container {
@@ -35,7 +36,7 @@
     width: 25px;
     display: block;
     margin-top: -2px;
-    z-index: 2222;
+    z-index: 1;
     position: absolute;
     margin-left: 10px;
 }
@@ -58,7 +59,7 @@
 .estate-item-left {
 	padding-right: 0px;
 	padding-left: 0px;
-	
+
 }
 .estate-item-left img {
 	height: 100%;
@@ -119,7 +120,7 @@
 }
 .container-figure h2 {
 	font-weight: 400;
-	padding-top: 220px;
+	padding-top: 205px;
 }
 .container-figure span {
 	font-size: 18px;
@@ -176,6 +177,9 @@
 	margin-top: 0px;
 	margin-bottom: -15px;
 }
+.media-serive-warp p {
+	color: #222;
+}
 
 .advantage-warp {
 	padding: 15px;
@@ -202,12 +206,12 @@
 
 
 .business-container {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .business-container .swiper-container {
-	padding-right: 70px;
-	padding-left: 70px;
+    padding-right: 60px;
+    padding-left: 60px;
 
 }
 .business-container .swiper-slide {
@@ -221,12 +225,14 @@
     z-index: 10;
     background-color: #efeff0;
     font-size: 34px;
-    color: #fff;
-    
+    color: #929292;
+
 }
 .button-next-warp>i, .button-prev-warp>i {
 	font-size: 45px;
 	cursor: pointer;
+    top: 50%;
+    position: absolute;
 }
 .button-next-warp>i:hover, .button-prev-warp>i:hover {
 	color: #ff4200;
@@ -234,14 +240,94 @@
 .button-next-warp {
 
     right: auto;
+    padding-left: 8px;
 }
 .button-prev-warp {
-	right: 15px;
-	left: auto;
+    right: 15px;
+    left: auto;
+    padding-left: 8px;
 }
-.swiper-slide-head {
+
+.swiper-slide-head ,.swiper-slide-head img {
+	height: 300px;
 	width: 100%;
 }
-.swiper-slide-head img {
+.swiper-slide-body {
+	background-color: #efeff0;
+	padding-top: 28px;
+	padding-left: 45px;
+	padding-bottom: 28px;
+}
+.swiper-slide-body li {
+	padding-bottom: 10px;
+	font-size: 16px;
+}
+.swiper-slide-body li > .iconfont {
+	color: #ff4200;
+	margin-right: 12px;
+}
+.container-review {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #efeff0;
+	margin-bottom: 75px;
+}
+.container-review .swiper-wrapper {
+	height: 273px;
+    padding-bottom: 30px;
+}
+.container-review .swiper-slide {
+	width: 33.33%;
+}
+.swiper-slide .img-responsive {
 	width: 100%;
+}
+.swiper-container-horizontal>.swiper-scrollbar {
+	position: relative;
+	bottom: 0px;
+	height: 3px;
+	background:#727171;
+
+}
+.swiper-scrollbar-drag {
+	background: #ff4200;
+}
+
+.tenement-banner {
+	height: 675px;
+}
+.six-service {
+    padding-top: 0px;
+    margin-top: -190px;
+    position: absolute;
+    z-index: 1;
+}
+.advantage-container {
+	padding: 15px 0px;
+}
+.advantage-container h3 {
+	font-size: 36px;
+	color: #0067b6;
+}
+.advantage-container h4 {
+	font-size: 20px;
+	color: #0064b4;
+	margin: 20px 0px;
+}
+.advantage-container p {
+	padding: 0px;
+}
+.container-pattern {
+	background:url(/website/images/estate/banner7.jpg)no-repeat scroll center top;
+	height:455px;
+}
+.service-content-warp {
+	padding-bottom: 60px;
+}
+.service-content-warp .item-header {
+	margin-bottom: 30px;
+}
+.service-content-warp .service-container {
+	padding-top: 10px;
+	padding-bottom: 0px;
 }

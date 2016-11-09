@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://static.joyowo.com/public/xm/dist/css/common/common.css">
+  <link rel="stylesheet" href="http://static.joyowo.com/lib/cmd-plugins/artDialog/6.0.2/ui-dialog.css">
+
+  
+  <script type="text/javascript" src="http://static.joyowo.com/lib/seajs/2.3.0/sea-debug.js"></script>
+  <script type="text/javascript" src="http://static.joyowo.com/lib/seajs-plugins/seajs-preload/1.0.0/seajs-preload.js"></script>
+  <script type="text/javascript" src="http://static.joyowo.com/public/xm/config/seajs/seajs-config.js"></script>
+  
+</head>
+<body>
+<script type="text/html" id='a'>
+<div class="a">
+  <a href="">111</a>
+  <b>2222</b>
+</div>
+</script>
+
+<a href="http://aui.github.io/artDialog/doc/index.html" target="_blank">api参考文档：http://aui.github.io/artDialog/doc/index.html</a>
+
+<script type="text/javascript">
+//dialog 参考文档：http://aui.github.io/artDialog/doc/index.html
+seajs.use(['{cmd}/artDialog/6.0.2/dialog', '$', '$2', ], function(undefined, $, $2) {
+  var delHtml = $('<div class="dialog-del">亲，您确定要下此狠手？<span>删除后将不可恢复哦~</span></div>');
+  // new dialog({
+  // 	title: "11",
+  // 	content: $('#a').html(),
+  //   ok: function() {
+      
+  //   }
+  // }).showModal();
+  // console.log($.fn.jquery)
+  // console.log($2.fn.jquery)
+
+  new dialog({
+     button: [
+        {
+          value: '确定',
+          autofocus: true,
+          callback: function (){
+            //alert('你点了确定')
+          }
+        },
+        {
+          value: '取消',
+          callback: function (){
+            //alert('你点了取消');
+          }
+        }
+    ],
+    title: "确认删除？",
+    content: delHtml
+  }).showModal();
+
+ // var a = new A();
+ // a.cos();
+ // console.log(a)
+ // console.log($)
+ // console.log($.fn.jquery)
+ // console.log($2.fn.jquery)
+});
+</script>
+</body>
+</html>

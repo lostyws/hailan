@@ -28,6 +28,8 @@
          <!--<![endif]-->
         <script src="http://127.0.0.1:4001/common.js"></script>
 
+
+
         <link rel="stylesheet" type="text/css" href="http://127.0.0.1:4001/website/js/index/index.css">
 
 
@@ -57,13 +59,13 @@
 
                     </form>
                     <ul class="nav navbar-nav navbar-left pull-right" id="header-nav">
-                        <li class="active"><a href="/">首  页</a><span class="bkg"></span></li>
+                        <li class="active"><a href="/website/html/index/index.html">首  页</a><span class="bkg"></span></li>
                         <li class="dropdown" item-name="about">
                             <a href="#about">关于海蓝</a><span class="bkg"></span>
 
                         </li>
                         <li class="dropdown" item-name="news"><a href="#news">新闻中心</a><span class="bkg"></span></li>
-                        <li class="dropdown" item-name="estate"><a href="#estate">地产中心</a><span class="bkg"></span></li>
+                        <li class="dropdown" item-name="estate"><a href="/website/html/estate/index.html">地产中心</a><span class="bkg"></span></li>
                         <li><a href="#join">加入海蓝</a><span class="bkg"></span></li>
                         <li><a href="#contact">联系海蓝</a><span class="bkg"></span></li>
                     </ul>
@@ -83,11 +85,11 @@
                         <a href="about.aspx?type=5">企业文化</a>
                         <a href="about.aspx?type=6">管理之道</a>
                     </div>
-                    <div class="item estate">
-                        <a href="about.aspx?type=3">地产服务</a>
-                        <a href="about.aspx?type=5">置业招商</a>
-                        <a href="about.aspx?type=6">物业服务</a>
-                        <a href="about.aspx?type=6">海蓝采智</a>
+                    <div class="item estate active">
+                        <a href="/website/html/estate/index.html">地产服务</a>
+                        <a href="/website/html/estate/business.html">置业招商</a>
+                        <a href="/website/html/estate/tenement.html">物业服务</a>
+                        <a href="/website/html/estate/adopt.html">海蓝采智</a>
                     </div>
                     <div class="item news">
                         <a href="about.aspx?type=3">新闻动态</a>
@@ -238,15 +240,58 @@
         <section>
             <div class="container-fluid container-footer">
                 <div class="container">
-                    <div class="text-center">
-                        <div class="share-warp">
-                            <i class="iconfont icon-fenxiang"></i>分享海蓝
-                            <span class="wechat"></span>
-                            <span class="zqone"></span>
-                            <span class="xinlang"></span>
-                            <span class="renren"></span>
+
+                    <div class="pull-left">
+                        <ul class="list-inline">
+                            <li><a href="#">廉政举报 </a><i class="iconfont icon-shuxian"></i></li>
+                            <li><a href="#">法律声明 </a><i class="iconfont icon-shuxian"></i></li>
+                            <li class="sitemap"><a href="#">网站地图</a><i class="iconfont icon-shuxian"></i>
+                                <ul class="sitemap-item">
+                                    <li><a href="#">首页</a></li>
+                                    <li><a href="#">关于海蓝<i class="iconfont icon-triangle"></i></a>
+                                        <ul class="sitemap-item-sub">
+                                            <li><a href="about.aspx?type=3">海蓝简介</a></li>
+                                            <li><a href="about.aspx?type=3">企业文化</a></li>
+                                            <li><a href="about.aspx?type=3">管理之道</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">新闻中心<i class="iconfont icon-triangle"></i></a>
+                                        <ul class="sitemap-item-sub">
+                                            <li><a href="about.aspx?type=3">新闻动态</a></li>
+                                            <li><a href="about.aspx?type=3">行业资讯</a></li>
+                                            <li><a href="about.aspx?type=3">媒体焦点</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">地产中心<i class="iconfont icon-triangle"></i></a>
+                                        <ul class="sitemap-item-sub">
+                                            <li><a href="about.aspx?type=3">地产服务</a></li>
+                                            <li><a href="about.aspx?type=3">置业招商</a></li>
+                                            <li><a href="about.aspx?type=3">物业服务</a></li>
+                                            <li><a href="about.aspx?type=3">海蓝采智</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">加入海蓝<i class="iconfont icon-triangle"></i></a></li>
+                                    <li><a href="#">联系海蓝<i class="iconfont icon-triangle"></i></a></li>
+                                    <li class="none"></li>
+                                </ul>
+
+
+                            </li>
+                            <li><a href="#">联系海蓝 </a></li>
+                        </ul>
+                        <p><span>海蓝地址：浙江省杭州市拱墅区丰潭路508号</span><span>版权所有：海蓝控股集团</span>
+                        <span><a href="http://www.miitbeian.gov.cn/" target="_blank">浙ICP备06025318</a></span></p>
+                    </div>
+                    <div class="pull-right">
+
+                        <div class="share-hailan js-share-hailan">
+                            <i class="iconfont icon-fenxiang"></i><span>分享海蓝</span>
+                        </div>
+                        <div class="consult-us">
+                            <i class="iconfont icon-geren"></i><span>咨询我们</span>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
