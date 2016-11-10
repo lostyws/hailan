@@ -26,12 +26,23 @@
         <link href="/plugins/pace/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
         <script src="/plugins/pace/pace.min.js"></script>
          <!--<![endif]-->
-        <script src="http://127.0.0.1:4001/common.js"></script>
+        <script src="/build/common.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:4001/website/js/estate/index.css">
+        <link rel="stylesheet" type="text/css" href="/build/website/js/estate/index.css">
 
 
     </head>
+    <style type="text/css">
+        /*.swiper-container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }*/
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
     <body>
         <nav class="navbar navbar-hailan navbar-fixed-top" role="navigation">
 
@@ -111,7 +122,7 @@
                 <p>
                     <i class="iconfont icon-nhome"></i><a href="/">地产中心</a>
                     <i class="iconfont icon-jiantou-right"></i><a href="/">置业招商</a>
-                    <i class="iconfont icon-jiantou-right"></i>海蓝·天行国际
+                    <i class="iconfont icon-jiantou-right"></i>海蓝·天行国际中心
                 </p>
             </div>
 
@@ -119,36 +130,40 @@
         <section id="slider">
 
             <div class="container">
-                
+
                 <div class="item-header padding-top-30 ">
-                    <h3><span>海蓝 · 天行国际</span></h3><em></em>
+                    <h3><span>海蓝 · 天行国际中心</span></h3><em></em>
                 </div>
+
                 <div class="swiper-container js-businessitem">
                     <div class="swiper-wrapper ">
-                        <div class="swiper-slide" style="background:url(/website/images/estate/banner8.jpg);background-size: cover;">
+                        <div class="swiper-slide" style="background-image:url(/website/images/estate/banner8.jpg);">
                         </div>
-                        <div class="swiper-slide" style="background:url(/website/images/estate/banner8.jpg);background-size: cover;">
+                        <div class="swiper-slide" style="background-image:url(/website/images/estate/banner7.jpg);">
                         </div>
-                        <div class="swiper-slide" style="background:url(/website/images/estate/banner8.jpg);background-size: cover;">
+                        <div class="swiper-slide" style="background-image:url(/website/images/estate/banner8.jpg);">
                         </div>
-                        <div class="swiper-slide" style="background:url(/website/images/estate/banner8.jpg);background-size: cover;">
+                        <div class="swiper-slide" style="background-image:url(/website/images/estate/banner7.jpg);">
                         </div>
-                        <div class="swiper-slide" style="background:url(/website/images/estate/banner8.jpg);background-size: cover;">
+                        <div class="swiper-slide" style="background-image:url(/website/images/estate/banner7.jpg);">
                         </div>
-                        
-                        <div class="button-prev "><i class="iconfont icon-arrowprev"></i></div>
-                        <div class="button-next "><i class="iconfont icon-arrownext"></i></div>
-                        <div class="text-prev-warp">
-                            <h3>海蓝·天行国际</h3>
-                            <p>城市综合体</p>
-                            <span>杭州市拱墅区丰潭路508号</span>
+                        <div class="swiper-slide" style="background-image:url(/website/images/estate/banner8.jpg);">
                         </div>
+
+
+                    </div>
+                    <div class="button-prev"><i class="iconfont icon-arrowprev"></i></div>
+                    <div class="button-next"><i class="iconfont icon-arrownext"></i></div>
+                    <div class="text-prev-warp">
+                        <h3>海蓝·天行国际中心</h3>
+                        <p>城市综合体</p>
+                        <span>杭州市拱墅区丰潭路508号</span>
                     </div>
                 </div>
             </div>
             <div class="container-fluid container-swiper-sub">
                 <div class="container">
-                    
+
                     <div class="swiper-container js-gallery-thumbs">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide col-md-2" style="background-image:url(/website/images/estate/14.jpg);"></div>
@@ -156,17 +171,19 @@
                             <div class="swiper-slide col-md-2" style="background-image:url(/website/images/estate/16.jpg)"></div>
                             <div class="swiper-slide col-md-2" style="background-image:url(/website/images/estate/17.jpg)"></div>
                             <div class="swiper-slide col-md-2" style="background-image:url(/website/images/estate/18.jpg)"></div>
+                            <div class="swiper-slide col-md-2" style="background-image:url(/website/images/estate/14.jpg);"></div>
+
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
             </div>
         </section>
 
 
 
-        
+
         <section>
             <div class="container">
                 <div class="estate-item">
@@ -202,8 +219,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
             </div>
             <div class="container-fluid locate-split">
@@ -214,7 +231,7 @@
                 <div class="swiper-slide">
                     <img class="img-responsive" alt="地理区位" src="/website/images/estate/19.jpg">
                 </div>
-                
+
             </div>
             <div class="container">
                 <div class="estate-item">
@@ -294,11 +311,11 @@
                         </div>
                     </form>
                 </div>
-                
-                
+
+
             </div>
 
-            
+
 
         </section>
 
@@ -373,5 +390,5 @@
 
 
     </body>
-    <script src="http://127.0.0.1:4001/website/js/estate/index.js"></script>
+    <script src="/build/website/js/estate/index.js"></script>
 </html>

@@ -13,7 +13,7 @@ var Swiper = require('{plugins}/swiper/3.1.7/swiper.js');
 var ZeroClipboard = require('{plugins}/ZeroClipboard.js');
 var sharetpl = require('{website}/tpl/share.hbs');
 var photostpl = require('{website}/tpl/photos.hbs');
-var photosPagetpl = require('{website}/tpl/photosPage.hbs');
+var photosPagetpl = require('{website}/tpl/photosPage.html');
 
 new Swiper('.js-media-serive', {
     // pagination: '.swiper-pagination',
@@ -23,7 +23,7 @@ new Swiper('.js-media-serive', {
     loop: true,
     height: 523,
     autoplay: 5000,
-    effect: 'fade',
+    // effect: 'fade',
 
 });
 // slidesPerView: 3,
@@ -54,20 +54,34 @@ new Swiper('.container-review .swiper-container', {
 
 });
 
+
+
+
 var galleryTop = new Swiper('.js-businessitem', {
-    nextButton: '.button-next',
-    prevButton: '.button-prev',
-    spaceBetween: 10,
+    prevButton: '.button-next',
+    nextButton: '.button-prev',
+    slidesPerView: 1,
+    initialSlide:3,
+    loop: true,
 });
 var galleryThumbs = new Swiper('.js-gallery-thumbs', {
     spaceBetween: 10,
     centeredSlides: true,
     slidesPerView: 'auto',
-    touchRatio: 0.2,
-    slideToClickedSlide: true
+    touchRatio: 0.1,
+    initialSlide:3,
+    // loop: true,
+    slideToClickedSlide: true,
+    onInit: function(swiper){
+      //Swiper初始化了
+      //alert(swiper.activeIndex);提示Swiper的当前索引
+        // console.log($('.js-gallery-thumbs .swiper-wrapper').attr("style"));
+        // $('.js-gallery-thumbs .swiper-wrapper').removeAttr('style');
+    }
 });
-galleryTop.params.control = galleryThumbs;
+
 galleryThumbs.params.control = galleryTop;
+galleryTop.params.control = galleryThumbs;
 
 
 
@@ -87,15 +101,9 @@ var photosJson = {
 // 业务布局
 $(document).on('click', '.js-business-layout', function() {
     var ajaxBackData = [{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
+        src:'/website/images/estate/b1.jpg'
     },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
-    },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
-    },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
-    },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
+        src:'/website/images/estate/b2.jpg'
     }]
     photosJson.data = ajaxBackData;
 
@@ -111,17 +119,17 @@ $(document).on('click', '.js-business-layout', function() {
         area: ['1000px', '580px'],
         content: photostpl(photosJson), //捕获的元素
         cancel: function() {
-            
+
         },
         success: function(layero, index){
             new Swiper('.js-photos', {
-                
+
                 nextButton: '.button-next',
                 prevButton: '.button-prev',
                 loop: true,
-                
+
                 autoplay: 5000,
-               
+
 
             });
         }
@@ -130,15 +138,9 @@ $(document).on('click', '.js-business-layout', function() {
 // 经典回顾
 $(document).on('click', '.js-classic-review', function() {
     var ajaxBackData = [{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
+        src:'/website/images/estate/b1.jpg'
     },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
-    },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
-    },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
-    },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
+        src:'/website/images/estate/b2.jpg'
     }]
     photosJson.data = ajaxBackData;
 
@@ -154,16 +156,16 @@ $(document).on('click', '.js-classic-review', function() {
         area: ['1000px', '580px'],
         content: photostpl(photosJson), //捕获的元素
         cancel: function() {
-            
+
         },
         success: function(layero, index){
             new Swiper('.js-photos', {
-                
+
                 nextButton: '.button-next',
                 prevButton: '.button-prev',
                 loop: true,
                 autoplay: 5000,
-               
+
 
             });
         }
@@ -171,7 +173,7 @@ $(document).on('click', '.js-classic-review', function() {
 })
 
 var photosPageJson = {
-    
+
     html: '',    //自定义的html，显示在层右侧
     tab: function(obj){}, //图片切换操作的回调，obj返回了图片pid和name
     json: { //您服务端接口需严格按照下述格式返回
@@ -199,15 +201,9 @@ var photosPageJson = {
 // 服务案例
 $(document).on('click', '.js-service-case', function() {
     var ajaxBackData = [{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
+        src:'/website/images/estate/b1.jpg'
     },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
-    },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
-    },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
-    },{
-        src:'http://localhost:4001/website/images/estate/b1.jpg'
+        src:'/website/images/estate/b2.jpg'
     }]
     photosPageJson.html = '这里传入自定义的html，也可以不传';
     photosPageJson.json.data =  ajaxBackData
@@ -215,26 +211,26 @@ $(document).on('click', '.js-service-case', function() {
     // layer.photos(photosPageJson);
 
     photosJson.data = ajaxBackData;
-    var contentDom = photosPagetpl(photosJson);
+    var contentDom = photosPagetpl;
     console.log(contentDom)
-    
+
     layer.open({
         type: 1,
         title: false, //不显示标题
         area: ['1000px', '670px'],
-        content: photosPagetpl(photosJson), //捕获的元素
+        content: photosPagetpl, //捕获的元素
         cancel: function() {
-            
+
         },
         success: function(layero, index){
             new Swiper('.js-photos-page', {
-                
+
                 nextButton: '.button-next',
                 prevButton: '.button-prev',
                 loop: true,
-                
+
                 autoplay: 5000,
-               
+
 
             });
         }

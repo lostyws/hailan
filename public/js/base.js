@@ -4,6 +4,7 @@ require('{plugins}/artDialog/6.0.2/dialog');
 var ZeroClipboard = require('{plugins}/ZeroClipboard.js');
 var sharetpl = require('{website}/tpl/share.hbs');
 
+
 $(document).on('click', '.js-share-hailan', function() {
     var $param = location.href;
     new dialog({
@@ -11,6 +12,14 @@ $(document).on('click', '.js-share-hailan', function() {
         content: sharetpl($param)
     }).showModal();
     new ZeroClipboard( document.getElementById("btnCopy"));
+
+})
+$('#bs-example-navbar-collapse-1').on('click', '.js-searchbtn', function() {
+    var searchVal = $('#search-val').val();
+    if(searchVal){
+        alert(searchVal)
+    }
+
 
 })
 var nav = $('#header-nav>li.dropdown'),
@@ -28,8 +37,7 @@ for (var i = 0; nav.length > i; i++) {
         'left':l,
         'width':W-l
     })
-    console.log('w====='+w)
-    console.log('l====='+l)
+
 
 }
 

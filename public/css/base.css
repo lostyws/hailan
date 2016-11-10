@@ -8,7 +8,10 @@ body {
     height: 100%;
     font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei";
 }
-
+@media (min-width: 1200px)
+.container {
+    width: 1020px;
+}
 @font-face {font-family: "iconfont";
   src: url('/public/font/iconfont.eot?t=14785307103341'); /* IE9*/
   src: url('/public/font/iconfont.eot?t=14785307103341#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -221,13 +224,13 @@ ul {
 }
 
 .container-footer {
-    height: 117px;
+    min-height: 117px;
     background-color: #414141;
     color: #fff;
     font-size: 16px;
 }
 .container-footer .pull-left {
-    padding: 30px 0;
+    padding-top: 40px;
 }
 .container-footer .pull-left a {
     color: #fff;
@@ -236,7 +239,7 @@ ul {
     padding-right: 30px;
 }
 .container-footer .pull-right {
-    padding: 35px 0;
+    padding-top: 40px;
     line-height: 34px;
 }
 .container-footer .pull-right>div {

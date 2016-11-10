@@ -1,4 +1,4 @@
-.#subNav  {
+#subNav  {
 	margin-top: 80px;
 }
 .js-banner-top.swiper-container {
@@ -117,7 +117,7 @@
 	font-size: 16px;
 	margin-bottom: 0px;
 }
-.js-banner-right:hover .text-prev-warp {
+.swiper-slide:hover .text-prev-warp {
 	left: 0;
 }
 .hailan-news>h4 {
