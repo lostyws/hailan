@@ -4,8 +4,18 @@ require('{plugins}/artDialog/6.0.2/dialog');
 var ZeroClipboard = require('{plugins}/ZeroClipboard.js');
 var sharetpl = require('{website}/tpl/share.hbs');
 
-
+// 底部分享 首页
 $(document).on('click', '.js-share-hailan', function() {
+    var $param = window.location.host;
+    new dialog({
+        title: "分享",
+        content: sharetpl($param)
+    }).showModal();
+    new ZeroClipboard( document.getElementById("btnCopy"));
+
+});
+// 资讯分享 详情页
+$(document).on('click', '.js-share-news', function() {
     var $param = location.href;
     new dialog({
         title: "分享",
@@ -14,6 +24,7 @@ $(document).on('click', '.js-share-hailan', function() {
     new ZeroClipboard( document.getElementById("btnCopy"));
 
 })
+// 顶部搜索
 $('#bs-example-navbar-collapse-1').on('click', '.js-searchbtn', function() {
     var searchVal = $('#search-val').val();
     if(searchVal){
@@ -22,6 +33,7 @@ $('#bs-example-navbar-collapse-1').on('click', '.js-searchbtn', function() {
 
 
 })
+// 子菜单宽度计算
 var nav = $('#header-nav>li.dropdown'),
 
     subNav = $('#subNav'),

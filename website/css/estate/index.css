@@ -7,42 +7,14 @@
 	margin-top: 80px;
 	background-size: cover;
 }
-.link-container {
-	padding-top: 30px;
-	padding-bottom: 8px;
-	color: #414141;
-}
-.link-container a {
-	color: #414141;
-}
-.link-container i {
-	margin-right: 5px;
-}
+
 .js-banner-top {
 	height: 445px;
 }
 .estate-item {
 	padding-top: 40px;
 }
-.item-header h3 {
-	margin: 0px;
-    font-size: 26px;
-    font-weight: 400;
-}
-.item-header h3 span {
-	display: inline-block;
-	padding-bottom: 15px;
-	border-bottom: 2px solid #aeaeae
-}
-.item-header em {
-	border-bottom: 2px solid #ff4200;
-    width: 25px;
-    display: block;
-    margin-top: -2px;
-    z-index: 1;
-    position: absolute;
-    margin-left: 10px;
-}
+
 .item-container p{
 	padding: 20px 0;
     font-size: 16px;

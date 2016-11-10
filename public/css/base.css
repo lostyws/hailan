@@ -13,11 +13,11 @@ body {
     width: 1020px;
 }
 @font-face {font-family: "iconfont";
-  src: url('/public/font/iconfont.eot?t=14785307103341'); /* IE9*/
-  src: url('/public/font/iconfont.eot?t=14785307103341#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('/public/font/iconfont.woff?t=14785307103341') format('woff'), /* chrome, firefox */
-  url('/public/font/iconfont.ttf?t=14785307103341') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('/public/font/iconfont.svg?t=14785307103341#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('/public/font/iconfont.eot?t=1478530710334211'); /* IE9*/
+  src: url('/public/font/iconfont.eot?t=1478530710334211#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/public/font/iconfont.woff?t=1478530710334211') format('woff'), /* chrome, firefox */
+  url('/public/font/iconfont.ttf?t=1478530710334211') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/public/font/iconfont.svg?t=1478530710334211#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -39,6 +39,9 @@ body {
 
 .icon-shuxian:before { content: "\e6af"; }
 .icon-hengxian:before { content: "\e604"; }
+.icon-file:before { content: "\e749"; }
+.icon-wenjian:before { content: "\e608"; }
+.icon-shijian:before { content: "\e68a"; }
 
 .icon-fenxiang:before { content: "\e70f"; }
 
@@ -55,7 +58,9 @@ body {
 .icon-dianhua-copy:before { content: "\e607"; }
 .icon-triangle:before { content: "\e613"; }
 .icon-home:before { content: "\e646"; }
-
+.icon-fanhui:before { content: "\e647"; }
+.icon-sanjiaoxing:before { content: "\e61f"; }
+.icon-sanjiaoxingzuo:before { content: "\e626"; }
 
 
 h3 {
@@ -80,6 +85,9 @@ ul {
 }
 .margin-15 {
     margin: 15px;
+}
+.margin-right-30 {
+    margin-right: 30px !important;
 }
 .padding-right-15 {
     padding-right: 15px !important;
@@ -186,7 +194,7 @@ ul {
     padding: 0 10px;
     cursor: pointer;
 }
-/*#content {position:relative; overflow:hidden;}*/
+/*subNav */
 #subNav {
     position:fixed;
     left:0px;z-index:4;
@@ -222,7 +230,50 @@ ul {
 #subNav .g-wrap .item.active {
     top: 0px;
 }
-
+/*subNav end*/
+/*.link-container */
+.link-container {
+    padding-top: 30px;
+    padding-bottom: 8px;
+    color: #414141;
+}
+.link-container a {
+    color: #414141;
+}
+.link-container i {
+    margin-right: 5px;
+}
+.top-link {
+    border-bottom: 1px solid #c6c7c7;
+}
+.top-bg {
+    background: transparent url('/website/images/estate/top_min.jpg') no-repeat scroll center top;
+    height: 90px;
+    margin-top: 80px;
+    background-size: cover;
+}
+/*.link-container  end*/
+/*item-header */
+.item-header h3 {
+    margin: 0px;
+    font-size: 26px;
+    font-weight: 400;
+}
+.item-header h3 span {
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #aeaeae
+}
+.item-header em {
+    border-bottom: 2px solid #ff4200;
+    width: 25px;
+    display: block;
+    margin-top: -2px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 10px;
+}
+/*item-header end*/
 .container-footer {
     min-height: 117px;
     background-color: #414141;
