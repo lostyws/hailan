@@ -1,10 +1,10 @@
 require('{plugins}/artDialog/6.0.2/ui-dialog.css');
 
-require('{website}/css/news/index.css');
+require('{website}/css/about/index.css');
 
 require('{public}/js/base.js');
 // var sharetpl = require('{website}/tpl/share.hbs');
-// // alert(11)
+// alert(11)
 // var $param = window.location.host;
 //     new dialog({
 //         title: "分享",

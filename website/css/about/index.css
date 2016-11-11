@@ -1,0 +1,146 @@
+.item-header {
+	padding-top: 45px;
+	padding-bottom: 30px;
+}
+.news-item-survey {
+	padding-bottom: 10px;
+}
+.news-item-survey > img {
+	height: 177px;
+	width: 325px;
+	display: block;
+	float: left;
+}
+.news-item-survey > .item-right {
+	padding-left: 360px;
+
+}
+.news-item-survey > .item-right > h4 {
+	color: #222;
+	font-size: 22px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.news-item-survey > .item-right > h4 > small {
+	color: #222;
+}
+.news-item-survey > .item-right > p {
+	line-height: 25px;
+}
+.survey-item > h4 {
+	color: #0064b4;
+	background: #efeff0;
+	padding-left: 15px;
+	line-height: 34px;
+	margin: 20px 0px;
+}
+.survey-item > p {
+	padding-left: 15px;
+	line-height: 25px;
+}
+
+.chairman-wishes-container {
+	background: #9b9ca0;
+	padding: 30px 0px;
+	color: #fff;
+}
+.chairman-wishes-container img {
+	height: 450px;
+	width: 300px;
+	display: block;
+	float: left;
+}
+.chairman-wishes-container .item-right {
+	padding-left: 330px;
+}
+.chairman-wishes-container .item-right h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.chairman-wishes-container .item-right .title {
+	padding-top: 20px;
+    margin-bottom: 0px;
+}
+.chairman-wishes-container .item-right .small {
+	font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0px;
+}
+.chairman-name-container {
+	background: #efeff0;
+}
+.chairman-name-container h2 {
+    color: #3b3b3b;
+    font-size: 26px;
+    margin: 0px;
+    padding: 15px 0;
+}
+.chairman-name-container h2 > small {
+	font-size: 14px;
+	color: #3b3b3b;
+	margin-left: 10px;
+}
+.container-about-bg {
+    height: 290px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -100px;
+}
+
+.container-core {
+	height: 443px;
+	background: transparent url('/website/images/about/b1.jpg') no-repeat scroll center top;
+	background-size: cover;
+}
+.container-idea {
+	height: 395px;
+	background: transparent url('/website/images/about/b2.jpg') no-repeat scroll center top;
+	background-size: cover;
+}
+.container-idea2 {
+	height: 535px;
+	background: transparent url('/website/images/about/b3.jpg') no-repeat scroll center top;
+	background-size: cover;
+}
+.container-core .core-warp {
+	padding-top: 140px;
+}
+.container-core .core-warp > h2 {
+	font-size: 44px;
+	margin-top: 0px;
+	font-family:"华文中宋";
+	color: #0064b4;
+}
+.container-core .core-warp > h4 {
+	font-size: 20px;
+	color: #000;
+	margin-bottom: 30px;
+}
+.container-core .core-warp > p {
+	margin-bottom: 5px;
+	color: #000;
+}
+.container-idea .idea-warp {
+	padding-left: 540px;
+}
+.container-idea .idea-warp > .cause {
+    padding-bottom: 105px;
+    padding-top: 5px;
+}
+.container-idea .idea-warp > .building {
+    padding-bottom: 75px;
+    padding-left: 35px;
+}
+.container-idea .idea-warp > .future {
+	padding-left: 110px;
+}
+.culture-list {
+	padding-bottom: 100px;
+}
+.culture-list .item-container > h4 {
+	color: #0081cd;
+	margin-bottom: 15px;
+}
+.culture-list .item-container > p {
+	margin-bottom: 5px;
+}
