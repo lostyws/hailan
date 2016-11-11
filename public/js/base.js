@@ -1,4 +1,4 @@
-require('{plugins}/artDialog/6.0.2/ui-dialog.css');
+// require('{plugins}/artDialog/6.0.2/ui-dialog.css');
 
 require('{plugins}/artDialog/6.0.2/dialog');
 var ZeroClipboard = require('{plugins}/ZeroClipboard.js');

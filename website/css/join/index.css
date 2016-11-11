@@ -1,0 +1,89 @@
+.item-header {
+	padding: 50px 0px;
+}
+.container-banner {
+	height: 443px;
+	background: transparent url('/website/images/join/b1.jpg') no-repeat scroll center top;
+	background-size: cover;
+	
+}
+.banner-text-warp {
+	padding-top: 140px;
+	text-align: center;
+}
+.banner-text-warp > h2 {
+	font-size: 36px;
+}
+.banner-text-warp > p {
+	color: #ff0000;
+	letter-spacing: 10px;
+	padding-top: 15px;
+}
+.recruit-list {
+	height: 197px;
+	margin-bottom: 115px;
+	color: #fff;
+}
+.recruit-list > div {
+	height: 100%;
+	background: #0064b4;
+	padding-left: 35px;
+}
+.recruit-list > div > h4 {
+	margin: 0px;
+	padding: 30px 0px;
+	font-size: 26px;
+}
+.recruit-list > div > h2 {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	font-size: 42px;
+}
+
+.recruit-list > div > p {
+	margin: 0px;
+}
+.recruit-list > div small {
+	font-size: 18px;
+}
+.recruit-list > div i {
+	width: 35px;
+	height: 1px;
+	z-index: 1;
+	display: block;
+	background: #fff;
+}
+.recruit-list .tenement {
+	background: #0090d7;
+}
+.container-other {
+	padding: 30px 0px;
+	background: #efeff0;
+	margin-bottom: 100px;
+}
+.service-list {
+    margin-top: -65px;
+    height: 65px;
+    border-bottom: 4px solid #aeaeae;
+    z-index: 2;
+    position: relative;
+}
+.service-list .service-item {
+
+	cursor: pointer;
+	height: 65px;
+}
+
+
+.service-item img {
+	width: 42px;
+	float: left;
+}
+.service-item>.title {
+	color: #272631;
+	padding-left: 50px;
+}
+.service-item>.title>h4 {
+	font-size: 22px;
+	margin: 0px;
+}

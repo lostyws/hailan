@@ -144,3 +144,20 @@
 .culture-list .item-container > p {
 	margin-bottom: 5px;
 }
+/*manage*/
+.manage-system-bg .talent-strategy {
+	margin: 0 auto;
+	margin-top: -155px;
+	height: 1200px;
+	overflow: hidden;
+}
+.container-service-system .service-warp {
+	padding-bottom: 40px;
+}
+.manage-system-bg .item-container {
+	padding-left: 0px;
+}
+.manage-system-bg .manage-bottom {
+    margin-top: -615px;
+    padding-bottom: 315px;
+}
