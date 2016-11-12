@@ -12,3 +12,15 @@ var Swiper = require('{plugins}/swiper/3.1.7/swiper.js');
 //     parallax: true,
 //     speed: 600,
 // });
+// 
+$('.recruit-info-list').on('click', '.js-applyfor', function() {
+	var recruitItemDom = $(this).parents('.recruit-item').eq(0);
+	var recruitContainerDom = recruitItemDom.find('.recruit-container');
+	if(recruitItemDom && recruitItemDom.hasClass('active')){
+		recruitContainerDom.slideDown();
+		recruitItemDom.removeClass('active');
+	}else{
+		recruitContainerDom.slideUp();
+		recruitItemDom.addClass('active');
+	}
+});

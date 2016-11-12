@@ -7,6 +7,20 @@
 	background-size: cover;
 	
 }
+.container-banner2 {
+	height: 443px;
+	background: transparent url('/website/images/join/b2.jpg') no-repeat scroll center top;
+	
+}
+.container-banner3 {
+	height: 618px;
+	background: transparent url('/website/images/join/b3.jpg') no-repeat scroll center top;
+	
+}
+.banner-img-warp {
+	padding-top: 70px;
+	text-align: center;
+}
 .banner-text-warp {
 	padding-top: 140px;
 	text-align: center;
@@ -86,4 +100,122 @@
 .service-item>.title>h4 {
 	font-size: 22px;
 	margin: 0px;
+}
+/*recruit-info-list*/
+.recruit-info-list {
+	padding-bottom: 75px;
+}
+.recruit-info-list .recruit-item {
+	background: #efeff0;
+	padding: 0 35px;
+	margin-bottom: 3px;
+}
+.recruit-info-list .recruit-item .recruit-title {
+	margin-left: -35px;
+	margin-right: -35px;
+	padding: 0 35px;
+	line-height: 45px;
+	color: #000;
+
+}
+.recruit-info-list .recruit-item .recruit-container {
+	display: none;
+}
+.recruit-item .recruit-title .position {
+	padding-right: 35px;
+	border-right: 1px solid #000;
+}
+.recruit-item .recruit-title .department {
+	padding-right: 95px;
+	border-right: 1px solid #000;
+	padding-left: 22px;
+	margin-right: 27px;
+}
+.recruit-item .recruit-title .applyfor {
+	float: right;
+	cursor: pointer;
+}
+.recruit-item .recruit-title .applyfor i {
+	background: #fff;
+	border-radius: 100%;
+	font-size: 24px;
+	color: #808080;
+	margin-left: 15px;
+	
+	
+}
+.recruit-info-list .recruit-item.active .recruit-title {
+	background: #808080;
+	
+	color: #fff;
+	
+}
+.recruit-item.active > .recruit-container {
+	display: block;
+}
+.recruit-item.active .recruit-title .position,
+.recruit-item.active .recruit-title .department {
+	border-color: #fff;
+}
+.recruit-info-list .recruit-item.active  .applyfor i:before {
+	content: "\e62a";
+}
+.recruit-item .recruit-container {
+	padding-bottom: 20px;
+}
+.recruit-container > div {
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+.recruit-container .base-info {
+    /*padding: 30px 0;*/
+	border-bottom: 1px dashed #898382;
+}
+.recruit-container .base-info > div {
+	padding: 10px 0;
+
+}
+.base-info > div label {
+	font-weight: 400;
+	margin: 0px;
+}
+/*校园招聘*/
+.recruitment-process {
+	margin-top: -240px;
+	z-index: 1;
+}
+.process-item .process-item-container {
+	padding: 65px;
+    padding-bottom: 70px;
+	color: #000;
+	background: #fff;
+}
+.process-item p.title {
+	width: 100%;
+	height: 22px;
+	background: #efeff0;
+	text-align: center;
+}
+.process-item p.campus {
+	background: #fff;
+	margin-bottom: 8px;
+	
+}
+.process-item p.title > span {
+	padding: 15px 30px;
+	background: #0064b4;
+	color: #fff;
+	font-size: 24px;
+    line-height: 22px;
+}
+.process-info {
+	text-align: center;
+	color: #007dc9;
+	font-size: 20px;
+}
+.process-info span {
+	padding: 10px 17px;
+	border: 2px solid #007dc9;
+	color: #000;
+    margin-right: 5px;
 }
