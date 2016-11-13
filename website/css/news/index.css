@@ -110,3 +110,6 @@
     text-align: center;
     margin: 0px 35px;
 }
+img {
+	max-width: 100%;
+}

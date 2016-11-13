@@ -265,7 +265,7 @@ ul {
 .link-container a {
     color: #414141;
 }
-.link-container i {
+.link-container .icon-nhome {
     margin-right: 5px;
 }
 .top-link {
@@ -277,6 +277,7 @@ ul {
     margin-top: 80px;
     background-size: cover;
 }
+
 /*.link-container  end*/
 /*item-header */
 .item-header h3 {

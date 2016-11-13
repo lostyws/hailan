@@ -236,5 +236,52 @@ $(document).on('click', '.js-service-case', function() {
         }
     });
 })
+$(document).on('change', '[name=isperson]', function() {
+    console.log($(this).val())
+    var isPerson = $(this).val();
+    var companyname = $('#companyname');
+    if(isPerson == 1){
+        companyname.attr('readonly',true)
+    }else{
+        companyname.removeAttr('readonly')
+    }
+})
+$(document).on('change', '#phone', function() {
+    var phone = $(this).val();
+    if(!(/^1[34578]\d{9}$/.test(phone))){ 
+        
+        layer.open({
+          type: 4,
+          content: ['手机号码有误，请重填', '#phone'] //数组第二项即吸附元素选择器或者DOM
+        });  
+        return false; 
+    } 
+})
+$(document).on('change', '#qq', function() {
+    var qq = $(this).val();
+    if(!(/^\d{5,12}$/.test(qq))){ 
+        
+        layer.open({
+          type: 4,
+          content: ['QQ号码有误，请重填', '#qq'] //数组第二项即吸附元素选择器或者DOM
+        });  
+        return false; 
+    } 
+})
+$(document).on('change', '#area', function() {
+    var area = $(this).val();
+    if(!(/^\d{1,99}$/.test(area))){ 
+        
+        layer.open({
+          type: 4,
+          content: ['只能输入数字', '#area'] //数组第二项即吸附元素选择器或者DOM
+        });  
+        return false; 
+    } 
+})
+
+
+
+
 
 

@@ -103,8 +103,15 @@
 }
 
 .js-media-serive {
-	height: 523px;
+	height: 650px;
 	padding: 25px 0px;
+}
+.js-media-serive .swiper-slide .img-responsive {
+	height: 523px;
+}
+.swiper-slide-box {
+	bottom: 0px;
+	padding-top: 35px;
 }
 .swiper-slide {
 	background-size: cover;
