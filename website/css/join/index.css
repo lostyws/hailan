@@ -5,17 +5,17 @@
 	height: 443px;
 	background: transparent url('/website/images/join/b1.jpg') no-repeat scroll center top;
 	background-size: cover;
-	
+
 }
 .container-banner2 {
 	height: 443px;
 	background: transparent url('/website/images/join/b2.jpg') no-repeat scroll center top;
-	
+
 }
 .container-banner3 {
 	height: 618px;
 	background: transparent url('/website/images/join/b3.jpg') no-repeat scroll center top;
-	
+
 }
 .banner-img-warp {
 	padding-top: 70px;
@@ -43,20 +43,20 @@
 	background: #0064b4;
 	padding-left: 35px;
 }
-.recruit-list > div > h4 {
+.recruit-list > div  h4 {
 	margin: 0px;
 	padding: 30px 0px;
 	font-size: 26px;
 	color: #fff;
 }
-.recruit-list > div > h2 {
+.recruit-list > div  h2 {
 	margin-top: 15px;
 	margin-bottom: 0px;
 	font-size: 42px;
 	color: #fff;
 }
 
-.recruit-list > div > p {
+.recruit-list > div p {
 	margin: 0px;
 }
 .recruit-list > div small {
@@ -144,14 +144,14 @@
 	font-size: 24px;
 	color: #808080;
 	margin-left: 15px;
-	
-	
+
+
 }
 .recruit-info-list .recruit-item.active .recruit-title {
 	background: #808080;
-	
+
 	color: #fff;
-	
+
 }
 .recruit-item.active > .recruit-container {
 	display: block;
@@ -202,7 +202,7 @@
 .process-item p.campus {
 	background: #fff;
 	margin-bottom: 8px;
-	
+
 }
 .process-item p.title > span {
 	padding: 15px 30px;

@@ -104,12 +104,8 @@
     z-index: 10;
     color: #fff;
     padding-left: 40px;
-    -ms-transition:left 400ms, right 400ms;
-	transition:left 400ms, right 400ms;
-	-webkit-transition:left 400ms, right 400ms;
-	-moz-transition:left 400ms, right 400ms;
-	-o-transition:left 400ms, right 400ms;
-	left: -100%;
+
+	left: 0;
 	right: auto;
 
 }
@@ -117,9 +113,7 @@
 	font-size: 16px;
 	margin-bottom: 0px;
 }
-.swiper-slide:hover .text-prev-warp {
-	left: 0;
-}
+
 .hailan-news>h4 {
 	font-size: 19px;
 	margin: 0px;

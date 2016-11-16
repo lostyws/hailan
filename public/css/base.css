@@ -227,6 +227,7 @@ ul {
     height:55px;
     line-height: 55px;
     overflow: hidden;
+    z-index: 1030;
 }
 #subNav .g-wrap {
     overflow:visible;
@@ -246,6 +247,7 @@ ul {
     color: #fff;
     padding-right: 30px;
     font-size: 16px;
+    z-index: 2;
     font-family: "微软雅黑";
 }
 #subNav .g-wrap .item a:hover,
@@ -329,6 +331,30 @@ ul {
     margin-right: 10px;
     float: left;
 }
+.container-footer .pull-right span,
+.container-footer .pull-right i {
+    color: #fff;
+}
+.container-footer .pull-right .icon-fenxiang {
+    font-size: 30px;
+}
+.follow-us .follow-box {
+    margin-top: -280px;
+    margin-left: -70px;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    height: 200px;
+    -webkit-transition: opacity 900ms;
+    transition: opacity 900ms;
+}
+.follow-us .follow-box img {
+    height: 100%;
+}
+.follow-us:hover .follow-box {
+    height: 200px;
+    opacity: 1;
+}
 .sitemap-item {
     margin-top: -360px;
     margin-left: -20px;
@@ -348,7 +374,7 @@ ul {
 }
 .sitemap-item-sub {
     margin-left: 90px;
-    margin-top: -20px;
+    margin-top: -37px;
     position: absolute;
     display: none;
 }
@@ -379,7 +405,12 @@ ul {
 .layui-layer-setwin .layui-layer-close2 {
     z-index: 1
 }
-
+#mask {display:none; position:fixed; top:0; left:0; z-index:1024; width:100%; height:100%;}
+#mask .wrap {position:fixed; top:0; right:-410px; z-index:1024; padding:0 20px; width:370px; height:100%; background-color:#2b2b2b;}
+#mask .wrap p {margin-top:130px; color:#fff; line-height:18px;font-size: 14px;}
+#mask .wrap p span {display:block;}
+#mask .wrap p .tit {font-size:16px; color:#ff0000;}
+#mask .wrap p .h2 {color:#ff0000; line-height:48px;font-size: 30px;}
 
 
 
