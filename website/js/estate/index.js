@@ -13,7 +13,7 @@ var Swiper = require('{plugins}/swiper/3.1.7/swiper.js');
 var ZeroClipboard = require('{plugins}/ZeroClipboard.js');
 var sharetpl = require('{website}/tpl/share.hbs');
 var photostpl = require('{website}/tpl/photos.hbs');
-var photosPagetpl = require('{website}/tpl/photosPage.html');
+var photosPagetpl = require('{website}/tpl/photosPage.hbs');
 
 new Swiper('.js-media-serive', {
     // pagination: '.swiper-pagination',
@@ -61,15 +61,15 @@ var galleryTop = new Swiper('.js-businessitem', {
     prevButton: '.button-next',
     nextButton: '.button-prev',
     slidesPerView: 1,
-    initialSlide:3,
-    loop: true,
+    // initialSlide:3,
+    // loop: true,
 });
 var galleryThumbs = new Swiper('.js-gallery-thumbs', {
     spaceBetween: 10,
     centeredSlides: true,
     slidesPerView: 'auto',
-    touchRatio: 0.1,
-    initialSlide:3,
+    // touchRatio: 0.1,
+    // initialSlide:3,
     // loop: true,
     slideToClickedSlide: true,
     onInit: function(swiper){
@@ -100,11 +100,27 @@ var photosJson = {
 }
 // 业务布局
 $(document).on('click', '.js-business-layout', function() {
+    var parentid = $(this).attr('parentid');
     var ajaxBackData = [{
         src:'/website/images/estate/b1.jpg'
     },{
         src:'/website/images/estate/b2.jpg'
     }]
+    if(parentid){
+        ajaxBackData = [{
+            src:`/website/images/estate/${parentid}/1.jpg`
+        },{
+            src:`/website/images/estate/${parentid}/2.jpg`
+        },{
+            src:`/website/images/estate/${parentid}/3.jpg`
+        },{
+            src:`/website/images/estate/${parentid}/4.jpg`
+        },{
+            src:`/website/images/estate/${parentid}/5.jpg`
+        }]
+    }
+
+
     photosJson.data = ajaxBackData;
 
     // layer.photos({
@@ -113,6 +129,7 @@ $(document).on('click', '.js-business-layout', function() {
 
     //     // anim: 6 //0-6的选择，指定弹出图片动画类型，默认随机
     // });
+    photosJson.pageButton = true;
     layer.open({
         type: 1,
         title: false, //不显示标题
@@ -124,8 +141,8 @@ $(document).on('click', '.js-business-layout', function() {
         success: function(layero, index){
             new Swiper('.js-photos', {
 
-                nextButton: '.button-next',
-                prevButton: '.button-prev',
+                nextButton: '.button-prev',
+                prevButton: '.button-next',
                 loop: true,
 
                 autoplay: 5000,
@@ -139,9 +156,13 @@ $(document).on('click', '.js-business-layout', function() {
 $(document).on('click', '.js-classic-review', function() {
     var ajaxBackData = [{
         src:'/website/images/estate/b1.jpg'
-    },{
-        src:'/website/images/estate/b2.jpg'
     }]
+    var bigSrc = $(this).attr('big-src');
+    if(bigSrc){
+        ajaxBackData = [{
+            src:bigSrc
+        }]
+    }
     photosJson.data = ajaxBackData;
 
     // layer.photos({
@@ -150,6 +171,7 @@ $(document).on('click', '.js-classic-review', function() {
 
     //     // anim: 6 //0-6的选择，指定弹出图片动画类型，默认随机
     // });
+
     layer.open({
         type: 1,
         title: false, //不显示标题
@@ -161,10 +183,10 @@ $(document).on('click', '.js-classic-review', function() {
         success: function(layero, index){
             new Swiper('.js-photos', {
 
-                nextButton: '.button-next',
-                prevButton: '.button-prev',
-                loop: true,
-                autoplay: 5000,
+                // nextButton: '.button-next',
+                // prevButton: '.button-prev',
+                // loop: true,
+                // autoplay: 5000,
 
 
             });
@@ -202,15 +224,21 @@ var photosPageJson = {
 $(document).on('click', '.js-service-case', function() {
     var ajaxBackData = [{
         src:'/website/images/estate/b1.jpg'
-    },{
-        src:'/website/images/estate/b2.jpg'
     }]
+    var parentid = $(this).attr('parentid');
+    var bigSrc = $(this).attr('big-src');
+    if(parentid && bigSrc){
+        ajaxBackData = [{
+            src:bigSrc
+        }]
+    }
     photosPageJson.html = '这里传入自定义的html，也可以不传';
     photosPageJson.json.data =  ajaxBackData
 
     // layer.photos(photosPageJson);
 
     photosJson.data = ajaxBackData;
+    photosJson.parentid = parentid;
     var contentDom = photosPagetpl;
     console.log(contentDom)
 
@@ -218,18 +246,18 @@ $(document).on('click', '.js-service-case', function() {
         type: 1,
         title: false, //不显示标题
         area: ['1000px', '670px'],
-        content: photosPagetpl, //捕获的元素
+        content: photosPagetpl(photosJson), //捕获的元素
         cancel: function() {
 
         },
         success: function(layero, index){
             new Swiper('.js-photos-page', {
 
-                nextButton: '.button-next',
-                prevButton: '.button-prev',
-                loop: true,
+                // nextButton: '.button-next',
+                // prevButton: '.button-prev',
+                // loop: true,
 
-                autoplay: 5000,
+                // autoplay: 5000,
 
 
             });
@@ -248,36 +276,36 @@ $(document).on('change', '[name=isperson]', function() {
 })
 $(document).on('change', '#phone', function() {
     var phone = $(this).val();
-    if(!(/^1[34578]\d{9}$/.test(phone))){ 
-        
+    if(!(/^1[34578]\d{9}$/.test(phone))){
+
         layer.open({
           type: 4,
           content: ['手机号码有误，请重填', '#phone'] //数组第二项即吸附元素选择器或者DOM
-        });  
-        return false; 
-    } 
+        });
+        return false;
+    }
 })
 $(document).on('change', '#qq', function() {
     var qq = $(this).val();
-    if(!(/^\d{5,12}$/.test(qq))){ 
-        
+    if(!(/^\d{5,12}$/.test(qq))){
+
         layer.open({
           type: 4,
           content: ['QQ号码有误，请重填', '#qq'] //数组第二项即吸附元素选择器或者DOM
-        });  
-        return false; 
-    } 
+        });
+        return false;
+    }
 })
 $(document).on('change', '#area', function() {
     var area = $(this).val();
-    if(!(/^\d{1,99}$/.test(area))){ 
-        
+    if(!(/^\d{1,99}$/.test(area))){
+
         layer.open({
           type: 4,
           content: ['只能输入数字', '#area'] //数组第二项即吸附元素选择器或者DOM
-        });  
-        return false; 
-    } 
+        });
+        return false;
+    }
 })
 
 

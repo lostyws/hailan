@@ -343,17 +343,15 @@ ul {
     margin-left: -70px;
     z-index: 1;
     position: absolute;
-    opacity: 0;
     height: 200px;
-    -webkit-transition: opacity 900ms;
-    transition: opacity 900ms;
+    display: none;
 }
 .follow-us .follow-box img {
     height: 100%;
 }
 .follow-us:hover .follow-box {
     height: 200px;
-    opacity: 1;
+    display: block;
 }
 .sitemap-item {
     margin-top: -360px;

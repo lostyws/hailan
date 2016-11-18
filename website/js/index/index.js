@@ -13,8 +13,8 @@ var sharetpl = require('{website}/tpl/share.hbs');
 new Swiper('.js-banner-top', {
     // pagination: '.swiper-pagination',
     // paginationClickable: '.swiper-pagination',
-    nextButton: '.button-next',
-    prevButton: '.button-prev',
+    nextButton: '.button-prev',
+    prevButton: '.button-next',
     loop: true,
     // height: 825,
     autoplay: 5000,
