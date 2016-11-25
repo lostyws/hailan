@@ -260,7 +260,7 @@
   };
   ZeroClipboard.version = "1.2.0-beta.4";
   var _defaults = {
-    moviePath: "/plugins/ZeroClipboard.swf",
+    moviePath: "/ZeroClipboard.swf",
     trustedOrigins: null,
     text: null,
     hoverClass: "zeroclipboard-is-hover",
