@@ -158,7 +158,7 @@ ul {
     transition: color 200ms;
 }
 .navbar-hailan .navbar-nav>li>span {
-    background-color: #ff4200;
+    background-color: #0064b4;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -252,7 +252,7 @@ ul {
 }
 #subNav .g-wrap .item a:hover,
 #subNav .g-wrap .item a.active  {
-    color: #ff4200;
+    color: #0064b4;
 }
 #subNav .g-wrap .item.active {
     top: 0px;
