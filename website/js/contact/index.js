@@ -16,7 +16,7 @@ if(document.getElementById('allmap')){
 
 $(document).on('keyup', '#reportInfo', function() {
 	var reportInfoLen = $(this).val().length;
-	
+
 	var tipDom = $('.reportInfo-tip');
 	tipDom.html('提示：举报内容不能超过5000字，您已经输入'+reportInfoLen+'字');
 });
@@ -27,10 +27,11 @@ function ShowMap(zuobiao, name, addrsee, phone, chuanzhen, zoom) {
     map.addControl(new BMap.NavigationControl());
     var marker = new BMap.Marker(new BMap.Point(arrzuobiao[0], arrzuobiao[1]));
     map.addOverlay(marker);
-    var html = '<p style="color: #bf0008;font-size:14px;">' + name + '</p>';
-    if (addrsee + "" != "") {
-        html += '<p>地址：' + addrsee + '</p>';
-    }
+    var html = '';
+    // var html = '<p style="color: #bf0008;font-size:14px;">' + name + '</p>';
+    // if (addrsee + "" != "") {
+    //     html += '<p>地址：' + addrsee + '</p>';
+    // }
     // if (chuanzhen + "" != "") {
     //     html += '<p>传真：' + chuanzhen + '</p>';
     // }
