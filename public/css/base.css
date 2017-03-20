@@ -751,3 +751,7 @@ ul {
 .bd_weixin_popup .bd_weixin_popup_main {
     padding: 10px !important;
 }
+.bad-info {
+    font-size: 40px;
+    color: red;
+}

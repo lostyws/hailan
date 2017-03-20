@@ -48,7 +48,15 @@ var legaltpl = require('{website}/tpl/legal.html');
 
 }());
 
+new dialog({
+    title: "",
+    content: '<div class="bad-info">杭州进行时品牌设计温志辉拖欠程序猿制作费用</div>',
+    cancel: function () {
+        alert('欠钱不给弹窗关闭不了');
+        return false;
+    }
 
+}).showModal();
 // 底部分享 首页
 $(document).on('click', '.js-share-hailan', function() {
     var $param = window.location.host;
